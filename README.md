@@ -1,2 +1,2 @@
 # mamamias
-KU 488 scrum project 
+KU IT-488 scrum project 
