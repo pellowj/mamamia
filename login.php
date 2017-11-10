@@ -4,7 +4,7 @@ include("inc/header.php");
 ?>
 
 <head>
-    <div class="container" id="loginbox">
+    <div class="container" style="text-align: center;" id="loginbox">
         <ul class="nav nav-tabs">
             <li class="active"><a data-toggle="tab" href="#login">Login</a></li>
             <li><a data-toggle="tab" href="#signup">Sign Up</a></li>
