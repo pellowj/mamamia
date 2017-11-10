@@ -21,7 +21,7 @@ include("inc/header.php"); ?>
         
         <h1><?php 
         if ($section != null) {
-            echo "<a href='catalog.php'>Full Catalog</a> &gt; ";
+
         }
         echo $pageTitle; ?></h1>
         

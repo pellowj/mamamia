@@ -23,8 +23,8 @@
               <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                   <li><a href="catalog.php">Menu</a></li>
-				  <li><a href="suggest.php">Suggestions</a></li>
-				  <li><a href="login.php">Login</a></li>
+                  <li><a href="suggest.php">Suggestions</a></li>
+                  <li><a href="login.php">Login</a></li>
                 </ul>
               </div>
             </div>

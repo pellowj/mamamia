@@ -363,14 +363,14 @@ CREATE TABLE `Media` (
 	`img`	varchar(255) NOT NULL,
 	`genre_id`	int(11) NOT NULL,
 	`format`	varchar(25) NOT NULL,
-	`year`	int(4) NOT NULL,
+	`year`	varchar(100) NOT NULL,
 	`category`	varchar(6) NOT NULL
 );
 
-INSERT INTO `Media` VALUES (1,'Veggie Pizza','img/media/veggie.png',55,'Cassette',1982,'Music');
-INSERT INTO `Media` VALUES (2,'Sausage Pizza','img/media/sausage.png',33,'MP3',2011,'Music');
-INSERT INTO `Media` VALUES (3,'Pepperoni Pizza','img/media/pepperoni.png',46,'MP3',2015,'Music');
-INSERT INTO `Media` VALUES (4,'Cheese Pizza','img/media/cheese.png',34,'Streaming',2015,'Music');
+INSERT INTO `Media` VALUES (1,'Veggie Pizza','img/media/veggie.png',55,'Cassette','30 minutes','10"');
+INSERT INTO `Media` VALUES (2,'Sausage Pizza','img/media/sausage.png',33,'MP3','35 minutes','12"');
+INSERT INTO `Media` VALUES (3,'Pepperoni Pizza','img/media/pepperoni.png',46,'MP3','25 minutes','14"');
+INSERT INTO `Media` VALUES (4,'Cheese Pizza','img/media/cheese.png',34,'Streaming','20 minutes','16"');
 DROP TABLE IF EXISTS `Genres`;
 CREATE TABLE `Genres` (
   `genre_id` int(11) NOT NULL,
