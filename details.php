@@ -37,12 +37,10 @@ include("inc/header.php"); ?>
             <table>
             
                 <tr>
-                    <th>Pizza size</th>
-                    <td><?php echo $item["category"]; ?></td>
+                    <th>Pizza size <?php echo $item["category"]; ?></th>
                 </tr>
                 <tr>
-                    <th>Sauce</th>
-                    <td><?php echo $item["genre"]; ?></td>
+                    <th>Sauce <?php echo $item["genre"]; ?></th>
                 </tr>
                 <tr>
                     <th>Toppings</th>
@@ -65,3 +63,6 @@ include("inc/header.php"); ?>
     </div>
 
 </div>
+
+<?php
+include("inc/footer.php"); 
