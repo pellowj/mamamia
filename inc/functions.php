@@ -150,7 +150,7 @@ function single_item_array($id) {
     try {
       $results = $db->prepare(
           "SELECT title, category, img, format, year, 
-          publisher, isbn, genre
+          publisher, isbn, genre, price
           FROM Media
           JOIN Genres ON Media.genre_id=Genres.genre_id
           LEFT OUTER JOIN Books 

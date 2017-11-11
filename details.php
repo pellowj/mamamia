@@ -31,7 +31,7 @@ include("inc/header.php"); ?>
             
                 <tr>
                     <th>Size</th>
-                    <td><?php echo $item["category"]; ?></td>
+                    <td><?php echo $item["category"];?>"</td>
                 </tr>
                 <tr>
                     <th>Toppings</th>
@@ -43,14 +43,13 @@ include("inc/header.php"); ?>
                 </tr>
                 <tr>
                     <th>Time</th>
-                    <td><?php echo $item["year"]; ?></td>
+                    <td><?php echo $item["year"]; ?> minutes</td>
                 </tr>
-                <?php if (strtolower($item["category"]) == '10"' || '12"' || '14"' || '16"') { ?>
                 <tr>
-                    <th>Cost</th>
-                    <td><?php echo ($item["artist"]); ?></td>
+                    <th>Price</th>
+                    <td>$<?php echo $item["price"]; ?></td>
                 </tr>
-                <?php } ?>
+
             </table>
         
         </div>
