@@ -367,70 +367,20 @@ CREATE TABLE `Media` (
 	`category`	varchar(6) NOT NULL
 );
 
-INSERT INTO `Media` VALUES (1,'Veggie Pizza','img/media/veggie.png',55,'Cassette','30 minutes','10"');
-INSERT INTO `Media` VALUES (2,'Sausage Pizza','img/media/sausage.png',33,'MP3','35 minutes','12"');
-INSERT INTO `Media` VALUES (3,'Pepperoni Pizza','img/media/pepperoni.png',46,'MP3','25 minutes','14"');
-INSERT INTO `Media` VALUES (4,'Cheese Pizza','img/media/cheese.png',34,'Streaming','20 minutes','16"');
+INSERT INTO `Media` VALUES (1,'Veggie Pizza','img/media/veggie.png',4,'Healthy Tomato','30 minutes','10"');
+INSERT INTO `Media` VALUES (2,'Sausage Pizza','img/media/sausage.png',1,'Hearty Tomato','35 minutes','12"');
+INSERT INTO `Media` VALUES (3,'Pepperoni Pizza','img/media/pepperoni.png',3,'Hearty Tomato','25 minutes','14"');
+INSERT INTO `Media` VALUES (4,'Cheese Pizza','img/media/cheese.png',2,'Tangy Tomato','20 minutes','16"');
 DROP TABLE IF EXISTS `Genres`;
 CREATE TABLE `Genres` (
   `genre_id` int(11) NOT NULL,
   `genre` varchar(50) NOT NULL
 );
-INSERT INTO `Genres` VALUES (1,'Action');
-INSERT INTO `Genres` VALUES (2,'Adventure');
-INSERT INTO `Genres` VALUES (3,'Comedy');
-INSERT INTO `Genres` VALUES (4,'Fantasy');
-INSERT INTO `Genres` VALUES (5,'Historical');
-INSERT INTO `Genres` VALUES (6,'Historical Fiction');
-INSERT INTO `Genres` VALUES (7,'Horror');
-INSERT INTO `Genres` VALUES (8,'Magical Realism');
-INSERT INTO `Genres` VALUES (9,'Mystery');
-INSERT INTO `Genres` VALUES (10,'Paranoid');
-INSERT INTO `Genres` VALUES (11,'Philosophical');
-INSERT INTO `Genres` VALUES (12,'Political');
-INSERT INTO `Genres` VALUES (13,'Romance');
-INSERT INTO `Genres` VALUES (14,'Saga');
-INSERT INTO `Genres` VALUES (15,'Satire');
-INSERT INTO `Genres` VALUES (16,'Sci-Fi');
-INSERT INTO `Genres` VALUES (17,'Tech');
-INSERT INTO `Genres` VALUES (18,'Thriller');
-INSERT INTO `Genres` VALUES (19,'Urban');
-INSERT INTO `Genres` VALUES (20,'Animation');
-INSERT INTO `Genres` VALUES (21,'Biography');
-INSERT INTO `Genres` VALUES (22,'Crime');
-INSERT INTO `Genres` VALUES (23,'Documentary');
-INSERT INTO `Genres` VALUES (24,'Drama');
-INSERT INTO `Genres` VALUES (25,'Family');
-INSERT INTO `Genres` VALUES (26,'Film-Noir');
-INSERT INTO `Genres` VALUES (27,'Musical');
-INSERT INTO `Genres` VALUES (28,'Sport');
-INSERT INTO `Genres` VALUES (29,'War');
-INSERT INTO `Genres` VALUES (30,'Western');
-INSERT INTO `Genres` VALUES (31,'Alternative');
-INSERT INTO `Genres` VALUES (32,'Blues');
-INSERT INTO `Genres` VALUES (33,'Classical');
-INSERT INTO `Genres` VALUES (34,'Country');
-INSERT INTO `Genres` VALUES (35,'Dance');
-INSERT INTO `Genres` VALUES (36,'Easy Listening');
-INSERT INTO `Genres` VALUES (37,'Electronic');
-INSERT INTO `Genres` VALUES (38,'Folk');
-INSERT INTO `Genres` VALUES (39,'Hip Hop/Rap');
-INSERT INTO `Genres` VALUES (40,'Inspirational/Gospel');
-INSERT INTO `Genres` VALUES (41,'Insirational/Gospel');
-INSERT INTO `Genres` VALUES (42,'Jazz');
-INSERT INTO `Genres` VALUES (43,'Latin');
-INSERT INTO `Genres` VALUES (44,'New Age');
-INSERT INTO `Genres` VALUES (45,'Opera');
-INSERT INTO `Genres` VALUES (46,'Pop');
-INSERT INTO `Genres` VALUES (47,'R&B/Soul');
-INSERT INTO `Genres` VALUES (48,'Reggae');
-INSERT INTO `Genres` VALUES (49,'Rock');
-INSERT INTO `Genres` VALUES (50,'Self-Help');
-INSERT INTO `Genres` VALUES (51,'Business');
-INSERT INTO `Genres` VALUES (52,'Poetry');
-INSERT INTO `Genres` VALUES (53,'Non-Fiction');
-INSERT INTO `Genres` VALUES (54,'Soundtrack');
-INSERT INTO `Genres` VALUES (55,'Disco');
+
+INSERT INTO `Genres` VALUES (1,'Crumbled Sausages');
+INSERT INTO `Genres` VALUES (2,'Five Cheese');
+INSERT INTO `Genres` VALUES (3,'Plentiful Pepperoni');
+INSERT INTO `Genres` VALUES (4,"Many Veggie's");
 DROP TABLE IF EXISTS `Genre_Categories`;
 CREATE TABLE `Genre_Categories` (
   `genre_id` int(11) NOT NULL,

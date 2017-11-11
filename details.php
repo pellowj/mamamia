@@ -38,42 +38,16 @@ include("inc/header.php"); ?>
                     <td><?php echo $item["genre"]; ?></td>
                 </tr>
                 <tr>
-                    <th>time</th>
+                    <th>Sauce</th>
                     <td><?php echo $item["format"]; ?></td>
                 </tr>
                 <tr>
-                    <th>Year</th>
+                    <th>Time</th>
                     <td><?php echo $item["year"]; ?></td>
                 </tr>
-                <?php if (strtolower($item["category"]) == "books") { ?>
+                <?php if (strtolower($item["category"]) == '10"' || '12"' || '14"' || '16"') { ?>
                 <tr>
-                    <th>Authors</th>
-                    <td><?php echo implode(", ",$item["author"]); ?></td>
-                </tr>
-                <tr>
-                    <th>Publisher</th>
-                    <td><?php echo $item["publisher"]; ?></td>
-                </tr>
-                <tr>
-                    <th>ISBN</th>
-                    <td><?php echo $item["isbn"]; ?></td>
-                </tr>    
-                <?php } else if (strtolower($item["category"]) == "movies") { ?>
-                <tr>
-                    <th>Director</th>
-                    <td><?php echo implode(", ",$item["director"]); ?></td>
-                </tr>
-                <tr>
-                    <th>Writers</th>
-                    <td><?php echo implode(", ",$item["writer"]); ?></td>
-                </tr>
-                <tr>
-                    <th>Stars</th>
-                    <td><?php echo implode(", ",$item["star"]); ?></td>
-                </tr>
-                <?php } else if (strtolower($item["category"]) == '10"' || '12"' || '14"' || '16"') { ?>
-                <tr>
-                    <th>Artist</th>
+                    <th>Cost</th>
                     <td><?php echo ($item["artist"]); ?></td>
                 </tr>
                 <?php } ?>
