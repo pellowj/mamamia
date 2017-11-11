@@ -1,6 +1,6 @@
 <?php 
 include("inc/functions.php");
-$pageTitle = "Full Catalog";
+$pageTitle = "Pizza's";
 $section = null;
 $search = null;
 $items_per_page = 8;
@@ -29,31 +29,7 @@ if ($total_items >0 ) {
     $limit_results = "cat=" . $section . "&";
   }
   
-  if ($current_page > $total_pages) {
-    header("location:catalog.php?" 
-           . $limit_results 
-           . "pg=".$total_pages);
-  }
-  if ($current_page < 1) {
-    header("location:catalog.php?"
-           . $limit_results
-           . "pg=1");
-  }
-  
-  $offset = ($current_page - 1) * $items_per_page;
   $pagination = "<div class=\"pagination\">";
-  $pagination .= "Pages: ";  
-  for ($i = 1;$i <= $total_pages;$i++) {
-    if ($i == $current_page) {
-      $pagination .= " <span>$i</span>";
-    } else {
-      $pagination .= " <a href='catalog.php?";
-      if (!empty($section)) {
-        $pagination .= "cat=".$section."&";
-      }
-      $pagination .= "pg=$i'>$i</a>";
-    }
-  }
   $pagination .= "</div>";
 }
 if (!empty($search)) {
