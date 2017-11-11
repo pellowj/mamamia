@@ -16,13 +16,6 @@ include("inc/header.php"); ?>
 
     <div class="wrapper">
         
-        <div class="breadcrumbs">
-            <a href="catalog.php">Full Catalog</a>
-            &gt; <a href="catalog.php?cat=<?php echo strtolower($item["category"]); ?>">
-            <?php echo $item["category"]; ?></a>
-            &gt; <?php echo $item["title"]; ?>
-        </div>
-        
         <div class="media-picture">
     
         <span>
@@ -37,15 +30,15 @@ include("inc/header.php"); ?>
             <table>
             
                 <tr>
-                    <th>Category</th>
+                    <th>Size</th>
                     <td><?php echo $item["category"]; ?></td>
                 </tr>
                 <tr>
-                    <th>Genre</th>
+                    <th>Toppings</th>
                     <td><?php echo $item["genre"]; ?></td>
                 </tr>
                 <tr>
-                    <th>Format</th>
+                    <th>time</th>
                     <td><?php echo $item["format"]; ?></td>
                 </tr>
                 <tr>
@@ -78,10 +71,10 @@ include("inc/header.php"); ?>
                     <th>Stars</th>
                     <td><?php echo implode(", ",$item["star"]); ?></td>
                 </tr>
-                <?php } else if (strtolower($item["category"]) == "music") { ?>
+                <?php } else if (strtolower($item["category"]) == '10"' || '12"' || '14"' || '16"') { ?>
                 <tr>
                     <th>Artist</th>
-                    <td><?php echo implode(", ",$item["artist"]); ?></td>
+                    <td><?php echo ($item["artist"]); ?></td>
                 </tr>
                 <?php } ?>
             </table>
@@ -91,4 +84,3 @@ include("inc/header.php"); ?>
     </div>
 
 </div>
-include("inc/footer.php"); 

@@ -5,8 +5,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = trim(filter_input(INPUT_POST,"email",FILTER_SANITIZE_EMAIL));
     $details = trim(filter_input(INPUT_POST,"details",FILTER_SANITIZE_SPECIAL_CHARS));
     
-    if ($name == "" || $email == "" || $category == "" || $title == "") {
-        $error_message = "Please fill in the required fields: Name, Email, Category and Title";
+    if ($name == "" || $email == "") {
+        $error_message = "Please fill in the required fields: Name and Email";
     }
     if (!isset($error_message) && $_POST["address"] != "") {
         $error_message = "Bad form input";
@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->setFrom($email, $name);
         $mail->addAddress('pellowj@aol.com', 'John');     // Add a recipient
         
-        $mail->isHTML(false);                             // Set email format to HTML
+        $mail->isHTML(true);                              // Set email format to HTML
         
         $mail->Subject = 'Pizza Suggestions ' . $name;
         $mail->Body    = $email_body;
