@@ -12,6 +12,7 @@ $pageTitle = $item["title"];
 $section = null;
 include("inc/header.php"); ?>
 
+<div class="container">
 <div class="section page">
 
     <div class="wrapper">
@@ -19,10 +20,15 @@ include("inc/header.php"); ?>
         <div class="media-picture">
     
         <span>
-            <img src="<?php echo $item["img"]; ?>" alt="<?php echo $item["title"]; ?>" />
-        </span>
-            
-        </div>
+            <ul style="list-style: none;">
+            <li>
+            <img class="img-responsive" src="<?php echo $item["img"]; ?>" alt="<?php echo $item["title"]; ?>" />
+            </li>
+            </ul>
+</span>
+        
+</div>
+        
         
         <div class="media-details">
         
@@ -55,5 +61,7 @@ include("inc/header.php"); ?>
         </div>
     
     </div>
+
+</div>
 
 </div>

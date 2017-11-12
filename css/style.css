@@ -11,6 +11,7 @@
  .jumbotron {
     text-align: center;
     background: white;
+    margin-top: 10%;
 }
 
 .container {
@@ -20,6 +21,14 @@
 #loginbox {
       margin-top: 2%;
       margin-bottom: 2%;
+}
+
+#formPage p {
+    text-align: center;
+}
+
+#formPage {
+    margin-top: 10%;
 }
 
 article,
@@ -523,7 +532,7 @@ table {
 html {overflow-y: scroll; overflow-x: hidden;}
 body {font-family: 'Open Sans', sans-serif; background:#f0eeed; color: #676767;}
 
-.wrapper {width: 980px; margin: 0 auto;}
+
 #content {padding: 20px 0 80px;}
 .header:after {content:"";height:0;display:block;visibility:hidden;clear:both;}
 .header {background: #ef8887; border-bottom: 3px solid #db7a78;}
@@ -711,3 +720,15 @@ form input[type="submit"] {
 .footer a {text-decoration: none; color: #539def; margin: 0 10px;}
 .footer li:first-child a {margin-left: 4px;}
 .footer a:hover, .footer a:active {text-decoration: underline;}
+
+/* adding media query to change menu to list if display screen is small */
+
+@media only screen and (max-width: 700px) {
+    .media-picture {
+        clear: left;
+    }
+
+    .media-picture span {
+        display: none;
+    }
+}

@@ -49,20 +49,21 @@ $section = "suggest";
 
 include("inc/header.php"); 
 ?>
-
-<div class="section page">
-    <div class="wrapper">
-        <h1>Suggest a Pizza</h1>
+<div class="container" id="formPage">
+<!--<div class="section page">
+    <div class="wrapper">-->
+        <h1 style="text-align: center;">Suggest a Pizza</h1>
         <?php if (isset($_GET["status"]) && $_GET["status"] == "thanks") {
             echo "<p>Thanks for the email! We&rsquo;ll check out your suggestion shortly!</p>";
         } else {
             if (isset($error_message)) {
                 echo "<p class='message'>".$error_message . "</p>";
             } else {
-                echo "<p>If you think there is something We&rsquo;re missing, let us know! Complete the form to send us an email.</p>";
+                echo "<p>If you think there is something we&rsquo;re missing, <br>let us know!<br> Complete the form to send us an email.</p>";
             }
         ?>
         <form method="post" action="suggest.php">
+            <!-- original form table code//////////////// 
             <table>
             <tr>
                 <th><label for="name">Name (required)</label></th>
@@ -83,9 +84,28 @@ include("inc/header.php");
             </tr>
             </table>
             <input type="submit" value="Send" />
-        </form>
+            -->
+
+            <!-- Boostrap Form -->
+            <div class="form-group">
+                <label for="name">Name (require)</label>
+                <input type="text" id="name" name="name" class="form-control" value="<?php if (isset($name)) { echo $name; } ?>">
+            </div>
+            <div class="form-group">
+                <label for="email">Email (required)</label>
+                <input type="text" id="email" name="email" class="form-control" value="<?php if (isset($email)) { echo $email; } ?>">
+            </div>
+            <div class="form-group">
+                <label for="details">Suggest Item Details</label>
+                <textarea class="form-control" id="details" name="details" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+
+
+            </form>
         <?php } ?>
     </div>
 </div>
+        </div>
 
 <?php include("inc/footer.php"); ?>

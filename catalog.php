@@ -1,6 +1,6 @@
 <?php 
 include("inc/functions.php");
-$pageTitle = "Pizza's";
+$pageTitle = "Pizza Menu";
 $section = null;
 $search = null;
 $items_per_page = 8;
@@ -41,11 +41,14 @@ if (!empty($search)) {
 }
 include("inc/header.php"); ?>
 
+<div class="container">
+
+
 <div class="section catalog page">
     
     <div class="wrapper">
         
-        <h1><?php 
+    <h1><?php 
         if ($search != null) {
           echo "Search Results for \"".htmlspecialchars($search)."\"";
         } else {
@@ -55,6 +58,7 @@ include("inc/header.php"); ?>
           echo $pageTitle;
         }
         ?></h1>
+        
         <?php
         if ($total_items < 1) {
           echo "<p>No items were found matching that search term.</p>";
@@ -74,5 +78,6 @@ include("inc/header.php"); ?>
         
     </div>
 </div>
+      </div>
 
 <?php include("inc/footer.php"); ?>
